@@ -1,0 +1,36 @@
+{
+  "name": "@westhide/vite-plugin-vue-jsx-swc",
+  "version": "0.1.0",
+  "description": "Vite plugin Vue JSX.",
+  "keywords": [
+    "vite-plugin",
+    "vue",
+    "jsx",
+    "swc"
+  ],
+  "author": "westhide <mr.westhide@gmail.com>",
+  "license": "MIT",
+  "repository": "westhide/vite-plugin-vue-jsx-swc",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "scripts": {
+    "build": "rm -fr dist && tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4"
+  },
+  "dependencies": {
+    "@swc/core": "^1.3.26",
+    "@westhide/swc-plugin-vue-jsx": "0.3.3"
+  },
+  "peerDependencies": {
+    "vite": "^4.0.0",
+    "vue": "^3.0.0"
+  }
+}
